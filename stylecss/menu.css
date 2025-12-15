@@ -1,0 +1,96 @@
+
+.main{
+  margin: auto;
+  height: auto;
+  width: 1200px;
+}
+a{
+  text-decoration: none;
+}
+/* Định dạng cho menu cấp 1 */
+.menu{
+  display: flex;
+  list-style: none;
+  background-color: rgba(250, 234, 222, 0.231);
+  height: auto;
+  overflow: visible;
+  position: relative;
+  align-items: center;   /* căn giữa  */
+  padding: 12px 0; 
+    
+}
+/* Định dạng cho các li trong menu cấp 1 */
+.menu li{
+  padding: 0 15px;      
+  line-height: normal;
+  text-align: left;
+  font-weight: 500;     
+  position: relative;
+}
+
+.menu li a{
+  display: block;
+  color: black;
+  padding: 0 15px;
+}
+
+/* menu con */
+.menu2{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+/* Hiển thị menu con khi hover chuột lên menu */
+.menu li:hover .menu2{
+  display: block;
+    
+}
+
+/* item */
+.menu2 li{
+  list-style: none;
+}
+
+/* link */
+.menu2 li a{
+  display: block;
+  padding: 12px 20px;
+  white-space: nowrap;   /*không xuống dòng */
+}
+
+/* hover */
+.menu2 li:hover{
+  background: #e6e6e6;
+}
+
+.icon-bar{
+  display: flex;
+  gap: 25px;          /* khoảng cách giữa icon */
+  align-items: center;
+  margin-left: auto;
+  
+}
+
+.icon-bar i{
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.icon-bar i:hover{
+  color: #555;
+}
+
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff; /* bắt buộc, tránh xuyên nền */
+}

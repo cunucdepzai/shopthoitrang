@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop thời trang krik </title>
+    <link rel="stylesheet" href="stylecss/stylekrik.css">
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.css">
+    <link rel="stylesheet" href="stylecss/menu.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <div class="chuchay">
+        <span>Shop thời trang krik xin kính chào quý khách</span>
+        </div>
+    </div>
+
+    <div class="header"> 
+        <div>
+            <ul class="menu">
+                <li> <img src="anh/logokrik.png" width="60px" height="40px"></li>
+                <li> <a href="#"> Trang chủ</a></li>
+                <li> <a href="#"> Bộ sưu tập</a>
+                    <ul class="menu2">
+                        <li> <a href="#quannam"> Quần nam</a></li>
+                        <li> <a href="#aonam"> Áo nam</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#phukien"> Phụ kiện</a></li>
+                <li> <a href="#sanphamnoibat"> Xu hướng</a></li>
+                <li> <a href="google.html" target="_blank"> Tin tức</a></li>
+                <li> <a href="#contact"> Liên hệ </a></li>
+
+                <div class="icon-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+    
+    
+   <div class="banner"> <img src="anh/bannerkrik2.png" alt=""></div>
+
+   <div class="spnb" id="sanphamnoibat">
+        Sản phẩm nổi bật
+   </div>
+
+   <div class="anhspnb">
+        <li style="margin-left: 80px;"> 
+            <div class="img-hover">
+                <img src="anh/anh1.png" class="img-front">
+                <img src="anh/anh1mau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo khoác da lộn </li>
+                <li style="font-weight: bold; margin-top: 10px;">799.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+
+            </ul>
+            
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/anh2.png" class="img-front">
+                <img src="anh/anh2mau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo khoác trần bông </li>
+                <li style="font-weight: bold; margin-top: 10px;">799.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/anh1.png" class="img-front">
+                <img src="anh/anh1mau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo khoác da lộn </li>
+                <li style="font-weight: bold; margin-top: 10px;">799.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/anh2.png" class="img-front">
+                <img src="anh/anh2mau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo khoác trần bông </li>
+                <li style="font-weight: bold; margin-top: 10px;">799.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+   </div>
+
+   <div class="modal" id="orderForm">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">×</span>
+
+
+
+            <h3>Thông tin giao hàng</h3>
+
+            <input type="text" placeholder="Họ và tên">
+            <div class="row">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Số điện thoại">
+            </div>
+
+            <input type="text" placeholder="Địa chỉ nhà">
+
+            <div class="row">
+                <select>
+                    <option>Chọn Tỉnh/Thành phố</option>
+                    <option>Lang Sơn</option>
+                    <option>Thành phố</option>
+                    <option>Cao Lộc</option>
+                    <option>Lộc Bình</option>
+                    <option>Đình Lập</option>
+                    <option>Văn Lãng</option>
+                    <option>Văn Quan</option>
+                    <option>Bắc Sơn</option>
+                    <option>Bình Gia</option>
+                    <option>Tràng Định</option>
+                    <option>Chi Lăng</option>
+                    <option>Hữu Lũng</option>
+                </select>
+                <select>
+                    <option>Chọn Quận/Huyện</option>
+                    <option>Lang Sơn</option>
+                    <option>Thành phố</option>
+                    <option>Cao Lộc</option>
+                    <option>Lộc Bình</option>
+                </select>
+                <select>
+                    <option>Chọn Phường/Xã</option>
+                    <option>Văn Quan</option>
+                    <option>Bắc Sơn</option>
+                    <option>Bình Gia</option>
+                    <option>Tràng Định</option>
+                    <option>Chi Lăng</option>
+                    <option>Hữu Lũng</option>
+                </select>
+            </div>
+
+            <textarea placeholder="Ghi chú thêm..."></textarea>
+
+            <button class="btn-submit">Xác nhận</button>
+        </div>
+    </div>
+
+    <div class="spnb" id="phukien">
+        Phụ kiện
+    </div>
+
+   <div class="anhspnb">
+        <li style="margin-left: 80px;">
+            <div class="img-hover">
+                <img src="anh/thatlung.png" class="img-front">
+                <img src="anh/thatlungmau.png" class="img-back">
+            </div>
+            <ul>
+                <li> Thắt lưng</li>
+                <li style="font-weight: bold; margin-top: 10px;">499.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+
+            </ul>
+            
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/giay.png" class="img-front">
+                <img src="anh/giaymau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Giày derby </li>
+                <li style="font-weight: bold; margin-top: 10px;">899.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/thatlung.png" class="img-front">
+                <img src="anh/thatlungmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Thắt lưng </li>
+                <li style="font-weight: bold; margin-top: 10px;">499.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/giay.png" class="img-front">
+                <img src="anh/giaymau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Giày derby </li>
+                <li style="font-weight: bold; margin-top: 10px;">899.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <!-- <li style="margin-left: 20px;"> 
+            <div class="img-hover">
+                <img src="thatlung.png" class="img-front">
+                <img src="thatlungmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Thắt lưng  </li>
+                <li style="font-weight: bold; margin-top: 10px;">499.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li> -->
+   </div>
+
+   <div class="spnb" id="quannam">
+        Quần nam
+   </div>
+
+   <div class="anhspnb">
+        <li style="margin-left: 80px;"> 
+            <div class="img-hover">
+                <img src="anh/quankakislim.png" class="img-front">
+                <img src="anh/quankakislimfitmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Quần kaki slimfit </li>
+                <li style="font-weight: bold; margin-top: 10px;">699.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+
+            </ul>
+            
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/quankakistragefit.png" class="img-front">
+                <img src="anh/quankakistragefitmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Quần kaki stragefit </li>
+                <li style="font-weight: bold; margin-top: 10px;">699.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/quankakislim.png" class="img-front">
+                <img src="anh/quankakislimfitmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Quần kaki slimfit </li>
+                <li style="font-weight: bold; margin-top: 10px;">699.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/quankakistragefit.png" class="img-front">
+                <img src="anh/quankakistragefitmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Quần kaki stragefit </li>
+                <li style="font-weight: bold; margin-top: 10px;">699.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+   </div>
+
+   <div class="spnb" id="aonam">
+        Áo nam
+   </div>
+
+   <div class="anhspnb">
+        <li style="margin-left: 80px;"> 
+            <div class="img-hover">
+                <img src="anh/aolen.png" class="img-front">
+                <img src="anh/aolenmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo len </li>
+                <li style="font-weight: bold; margin-top: 10px;">299.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+
+            </ul>
+            
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/aococ.png" class="img-front">
+                <img src="anh/aococmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo cộc </li>
+                <li style="font-weight: bold; margin-top: 10px;">299.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/aolen.png" class="img-front">
+                <img src="anh/aolenmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo len </li>
+                <li style="font-weight: bold; margin-top: 10px;">299.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <li style="margin-left: 70px;"> 
+            <div class="img-hover">
+                <img src="anh/aococ.png" class="img-front">
+                <img src="anh/aococmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo cộc </li>
+                <li style="font-weight: bold; margin-top: 10px;">299.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li>
+
+        <!-- <li style="margin-left: 15px;"> 
+            <div class="img-hover">
+                <img src="aolen.png" class="img-front">
+                <img src="aolenmau.png" class="img-back">
+            </div>
+            <ul>
+                <li>Áo len </li>
+                <li style="font-weight: bold; margin-top: 10px;">299.000dđ</li>
+                <a href="javascript:void(0)" class="buy" onclick="openForm()">Buy Now</a>
+            </ul>
+        </li> -->
+   </div>
+
+   <div class="footer" id="contact">
+        <div class="duoi">
+            <li>Contact: Tuấn Phương</li>
+            <li>0366107506</li>
+        </div>
+   </div>
+   
+
+   
+
+</body>
+</html>
